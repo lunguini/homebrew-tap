@@ -11,7 +11,7 @@ class Gocker < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lunguini/gocker/releases/download/v0.5.3/gocker_0.5.3_darwin_amd64.tar.gz"
-      sha256 "0e2c061a8ce76c1fe25dd07c7615249a2df0fe67380ac90f77c69c733319eb6d"
+      sha256 "19fa580ff8b35d6798770eea85236b0f1f94a66022fbde142d422eb0176e1fed"
 
       define_method(:install) do
         bin.install "gocker"
@@ -19,7 +19,7 @@ class Gocker < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lunguini/gocker/releases/download/v0.5.3/gocker_0.5.3_darwin_arm64.tar.gz"
-      sha256 "ea532f5601fbf91f305a88cc74084611e2b123f6b16f47837b9dbb5a857063ba"
+      sha256 "78f700d7a5d913d91092eb0f0b259a53d455e293e55e9f11f424947ccdc84cf7"
 
       define_method(:install) do
         bin.install "gocker"
@@ -30,14 +30,14 @@ class Gocker < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lunguini/gocker/releases/download/v0.5.3/gocker_0.5.3_linux_amd64.tar.gz"
-      sha256 "1d5ee4a1ed08babe48bef1d84934b9b4e32c521d3e223ac864442639481e39a6"
+      sha256 "708f763c4b48658bf8fd37d28a3e15fef84a6fc1f72f2e1aae78cc83b89991b3"
       define_method(:install) do
         bin.install "gocker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lunguini/gocker/releases/download/v0.5.3/gocker_0.5.3_linux_arm64.tar.gz"
-      sha256 "55a08fbee0e75dccf5329dc12724c9f5ae7a5b21ac785487dd5c242f8b995cc2"
+      sha256 "97c6655de8dd1c9779b41239e6ee41726d716b4ea79146ac821e1153fb2bc14a"
       define_method(:install) do
         bin.install "gocker"
       end
