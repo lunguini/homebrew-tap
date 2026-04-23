@@ -5,21 +5,21 @@
 class Gocker < Formula
   desc "Docker-compatible CLI for Apple Container on macOS. Hardware-level isolation via Virtualization.framework."
   homepage "https://github.com/lunguini/gocker"
-  version "0.6.4"
+  version "0.6.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lunguini/gocker/releases/download/v0.6.4/gocker_0.6.4_darwin_amd64.tar.gz"
-      sha256 "3f44bbdc93a4399ce6ba2c92a8d85d6795e487cad460bb2b99faf515389ad899"
+      url "https://github.com/lunguini/gocker/releases/download/v0.6.5/gocker_0.6.5_darwin_amd64.tar.gz"
+      sha256 "6b49e256ddef19dfa94e5dde70c184c87bba794964a0a88f4407583c92efe490"
 
       define_method(:install) do
         bin.install "gocker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lunguini/gocker/releases/download/v0.6.4/gocker_0.6.4_darwin_arm64.tar.gz"
-      sha256 "38447b67b087d2c7b986d242f747b544cfdd8989211e32e2b6fca0a78002bf8a"
+      url "https://github.com/lunguini/gocker/releases/download/v0.6.5/gocker_0.6.5_darwin_arm64.tar.gz"
+      sha256 "f6f513e3d2da965128700c4c8246f9ebde4acac738337074935639f54da6472d"
 
       define_method(:install) do
         bin.install "gocker"
@@ -29,15 +29,15 @@ class Gocker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lunguini/gocker/releases/download/v0.6.4/gocker_0.6.4_linux_amd64.tar.gz"
-      sha256 "45cec26971262a38a1f001d6f1f4b937c056432be64e7fe11b79a6e711e4a890"
+      url "https://github.com/lunguini/gocker/releases/download/v0.6.5/gocker_0.6.5_linux_amd64.tar.gz"
+      sha256 "52f5ece68f5c3a343a10588ffaf9488ba013eb7e009802b5dc2632b3c2457d6f"
       define_method(:install) do
         bin.install "gocker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lunguini/gocker/releases/download/v0.6.4/gocker_0.6.4_linux_arm64.tar.gz"
-      sha256 "9adedc99b3971cd358065b26d8076c190bbc788a90015706eb2218dbba140184"
+      url "https://github.com/lunguini/gocker/releases/download/v0.6.5/gocker_0.6.5_linux_arm64.tar.gz"
+      sha256 "400f462348252304b61ca7c1035c3140489f7edfef1f45f25e81e51de8fe15a2"
       define_method(:install) do
         bin.install "gocker"
       end
