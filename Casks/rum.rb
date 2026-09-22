@@ -1,6 +1,6 @@
 cask "rum" do
-	version "1.2.0"
-	sha256 "3df34bd91e8fdd7b98e23dca5fce0715ce4a379a0c083841a3a3012a5c1c64a4"
+	version "1.2.1"
+	sha256 "4e13facdbfac7f69b83bc10bd379d5334f374b582eb2c8cfa7ff993ed42bab17"
 
 	url "https://github.com/adrianlungu/rum/releases/download/v#{version}/Rum.zip"
 	name "Rum"
