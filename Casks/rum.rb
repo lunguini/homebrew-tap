@@ -1,12 +1,13 @@
 cask "rum" do
-	version "1.2.1"
-	sha256 "4e13facdbfac7f69b83bc10bd379d5334f374b582eb2c8cfa7ff993ed42bab17"
+	version "2.0.0-beta.1"
+	sha256 "26749001f691db62271417980153f9cba9bd2d18da26f36979fe3b6154362b26"
 
-	url "https://github.com/adrianlungu/rum/releases/download/v#{version}/Rum.zip"
+	url "https://github.com/lunguini/rum/releases/download/v#{version}/Rum.zip"
 	name "Rum"
 	desc "Wine wrapper for running Windows apps on macOS"
-	homepage "https://github.com/adrianlungu/rum"
+	homepage "https://github.com/lunguini/rum"
 
+	conflicts_with cask: ["rum@1", "rum@2"]
 	depends_on macos: ">= :sequoia"
 	depends_on arch: :arm64
 
